@@ -23,7 +23,7 @@ const SideBarMenuBtn: React.FC<AvatarMenuProps> = ({
     options,
     isAvatar
 }) => {
-    const handleIcons = (option: Options): JSX.Element => {
+    const handleIcons = (option?: Options): JSX.Element => {
         switch (option) {
             case Options.OPTIONS:
                 return (
