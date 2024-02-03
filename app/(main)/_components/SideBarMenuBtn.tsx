@@ -49,7 +49,7 @@ const SideBarMenuBtn: React.FC<AvatarMenuProps> = ({
     return (
         <div
             className={clsx(
-                'w-[200px] h-12 gap-3 rounded-[20px] flex justify-between items-center py-4 px-3 hover:bg-[#6470840A] cursor-pointer',
+                'w-[200px] h-12 gap-3 rounded-[20px] flex justify-between items-center py-4 px-3 hover:bg-[#6470840A] transition-all duration-100 cursor-pointer',
                 isActive && 'bg-[#6470840A]'
             )}
         >
