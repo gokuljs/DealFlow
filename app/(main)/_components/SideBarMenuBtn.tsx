@@ -12,7 +12,7 @@ interface AvatarMenuProps {
     isActive?: boolean;
     image: string;
     name: string;
-    options: Options;
+    options?: Options;
     isAvatar?: boolean;
 }
 
