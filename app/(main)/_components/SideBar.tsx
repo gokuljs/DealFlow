@@ -1,7 +1,14 @@
 import React from 'react';
 import SideBarMenuBtn, { Options } from './SideBarMenuBtn';
 
-const sideBarMenu = [
+interface SideBarMenuItems {
+    name: string;
+    isActive: boolean;
+    image: string;
+    options?: Options;
+}
+
+const sideBarMenu: SideBarMenuItems[] = [
     {
         name: 'Invoice',
         isActive: false,
@@ -31,7 +38,7 @@ const sideBarMenu = [
     }
 ];
 
-const bottomMenuItems = [
+const bottomMenuItems: SideBarMenuItems[] = [
     {
         name: 'Chat',
         isActive: false,
