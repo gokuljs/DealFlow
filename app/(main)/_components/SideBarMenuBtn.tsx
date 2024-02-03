@@ -38,7 +38,9 @@ const SideBarMenuBtn: React.FC<AvatarMenuProps> = ({
             case Options.NOTIFICATION:
                 return <div className='h-2 w-2 rounded bg-[#C655CE]'></div>;
             case Options.NEW:
-                return <NewBadge />;
+                return (
+                    <NewBadge textColor='#C655CE' backgroundColor='#f6defa6a' />
+                );
             default:
                 return <></>;
         }
