@@ -15,7 +15,7 @@ const NewBadge: React.FC<NewBadeProps> = ({
                 color: textColor,
                 backgroundColor: backgroundColor
             }}
-            className={`width-[42px] h-6 flex items-center justify-center rounded-full text-xs  py-0 px-2`}
+            className={`w-[42px] h-6 flex items-center justify-center rounded-full text-xs  py-0 px-2`}
         >
             New
         </div>

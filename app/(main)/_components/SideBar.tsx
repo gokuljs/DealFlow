@@ -54,7 +54,7 @@ const bottomMenuItems: SideBarMenuItems[] = [
 
 const Sidebar = (): JSX.Element => {
     return (
-        <aside className='border h-full w-[240px] border-r  border-borderCustomGrey flex flex-col justify-between p-0 py-0.5'>
+        <aside className='border h-[full] w-[240px] border-r  border-borderCustomGrey flex flex-col justify-between p-0 py-0.5'>
             <div className='w-full h-full flex flex-col items-center'>
                 <div className='flex items-center justify-center w-full h-16'>
                     <SideBarMenuBtn
