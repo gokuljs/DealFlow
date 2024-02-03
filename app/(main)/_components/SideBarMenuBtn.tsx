@@ -23,12 +23,27 @@ const SideBarMenuBtn: React.FC<AvatarMenuProps> = ({
     options,
     isAvatar
 }) => {
-    const handleIcons = (option: Options): string | null => {
+    const handleIcons = (option: Options): JSX.Element => {
         switch (option) {
             case Options.OPTIONS:
-                return '/leftarrow.svg';
+                return (
+                    <Image
+                        src='/leftarrow.svg'
+                        width={16}
+                        height={16}
+                        alt='Devflow Avatar'
+                    />
+                );
+            case Options.NOTIFICATION:
+                return <div className='h-2 w-2 rounded bg-[#C655CE]'></div>;
+            case Options.NEW:
+                return (
+                    <div className='h-6 flex items-center justify-center width-[42px] rounded-full text-[#C655CE] text-xs bg-[#f6defa6a] py-0 px-2'>
+                        New
+                    </div>
+                );
             default:
-                return null;
+                return <></>;
         }
     };
     return (
@@ -55,16 +70,7 @@ const SideBarMenuBtn: React.FC<AvatarMenuProps> = ({
                     {name}
                 </p>
             </div>
-            <div>
-                {handleIcons(options) && (
-                    <Image
-                        src={handleIcons(options) as string}
-                        width={16}
-                        height={16}
-                        alt='Devflow Avatar'
-                    />
-                )}
-            </div>
+            <div>{handleIcons(options)}</div>
         </div>
     );
 };

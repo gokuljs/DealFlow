@@ -12,25 +12,22 @@ const sideBarMenu = [
         name: 'Pay',
         isActive: false,
         image: '/minus.svg',
-        options: Options.NOTIFICATION
+        options: Options.NEW
     },
     {
         name: 'Financing',
         isActive: false,
-        image: '/Lightning.svg',
-        options: Options.NOTIFICATION
+        image: '/Lightning.svg'
     },
     {
         name: 'Contacts',
         isActive: false,
-        image: '/Contacts.svg',
-        options: Options.NOTIFICATION
+        image: '/Contacts.svg'
     },
     {
         name: 'Plugin',
         isActive: false,
-        image: '/hex.svg',
-        options: Options.NOTIFICATION
+        image: '/hex.svg'
     }
 ];
 
@@ -38,8 +35,7 @@ const bottomMenuItems = [
     {
         name: 'Chat',
         isActive: false,
-        image: '/chat.svg',
-        options: Options.NOTIFICATION
+        image: '/chat.svg'
     },
     {
         name: 'Notifications',
