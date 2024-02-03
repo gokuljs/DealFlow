@@ -7,7 +7,8 @@
         "next/core-web-vitals",
         "plugin:@typescript-eslint/recommended",
         "prettier",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "plugin:storybook/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -17,10 +18,17 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": ["react", "@typescript-eslint", "react-hooks", "import"],
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "react-hooks",
+        "import"
+    ],
     "rules": {
         "no-use-before-define": "off",
-        "@typescript-eslint/no-use-before-define": ["error"],
+        "@typescript-eslint/no-use-before-define": [
+            "error"
+        ],
         "@typescript-eslint/explicit-function-return-type": [
             "error",
             {
