@@ -5,25 +5,46 @@ const sideBarMenu = [
     {
         name: 'Invoice',
         isActive: false,
-        image: '/Avatar.svg',
+        image: '/Add.svg',
         options: Options.NOTIFICATION
     },
     {
         name: 'Pay',
         isActive: false,
-        image: '/Avatar.svg',
+        image: '/minus.svg',
+        options: Options.NOTIFICATION
+    },
+    {
+        name: 'Financing',
+        isActive: false,
+        image: '/Lightning.svg',
         options: Options.NOTIFICATION
     },
     {
         name: 'Contacts',
         isActive: false,
-        image: '/Avatar.svg',
+        image: '/Contacts.svg',
         options: Options.NOTIFICATION
     },
     {
         name: 'Plugin',
         isActive: false,
-        image: '/Avatar.svg',
+        image: '/hex.svg',
+        options: Options.NOTIFICATION
+    }
+];
+
+const bottomMenuItems = [
+    {
+        name: 'Chat',
+        isActive: false,
+        image: '/chat.svg',
+        options: Options.NOTIFICATION
+    },
+    {
+        name: 'Notifications',
+        isActive: false,
+        image: '/bell.svg',
         options: Options.NOTIFICATION
     }
 ];
@@ -53,7 +74,16 @@ const Sidebar = (): JSX.Element => {
                 </div>
             </div>
             <div className='w-full h-full flex flex-col items-center justify-end'>
-                <div></div>
+                <div className='flex flex-col items-center gap-3 mt-2'>
+                    {bottomMenuItems.map((item, index) => (
+                        <SideBarMenuBtn
+                            key={index}
+                            name={item.name}
+                            image={item.image}
+                            options={item.options}
+                        />
+                    ))}
+                </div>
                 <div className='flex items-center justify-center w-full h-16'>
                     <SideBarMenuBtn
                         isActive={false}
