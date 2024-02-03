@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { clsx } from 'clsx';
+import NewBadge from './NewBadge';
 
 export enum Options {
     OPTIONS = 'OPTIONS',
@@ -38,9 +39,7 @@ const SideBarMenuBtn: React.FC<AvatarMenuProps> = ({
                 return <div className='h-2 w-2 rounded bg-[#C655CE]'></div>;
             case Options.NEW:
                 return (
-                    <div className='h-6 flex items-center justify-center width-[42px] rounded-full text-[#C655CE] text-xs bg-[#f6defa6a] py-0 px-2'>
-                        New
-                    </div>
+                    <NewBadge textColor='#C655CE' backgroundColor='#f6defa6a' />
                 );
             default:
                 return <></>;
@@ -49,7 +48,7 @@ const SideBarMenuBtn: React.FC<AvatarMenuProps> = ({
     return (
         <div
             className={clsx(
-                'w-[200px] h-12 gap-3 rounded-[20px] flex justify-between items-center py-4 px-3 hover:bg-[#6470840A] cursor-pointer',
+                'w-[200px] h-12 gap-3 rounded-[20px] flex justify-between items-center py-4 px-3 hover:bg-[#6470840A] transition-all duration-100 cursor-pointer',
                 isActive && 'bg-[#6470840A]'
             )}
         >

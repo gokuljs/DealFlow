@@ -1,7 +1,14 @@
 import React from 'react';
 import SideBarMenuBtn, { Options } from './SideBarMenuBtn';
 
-const sideBarMenu = [
+interface SideBarMenuItems {
+    name: string;
+    isActive: boolean;
+    image: string;
+    options?: Options;
+}
+
+const sideBarMenu: SideBarMenuItems[] = [
     {
         name: 'Invoice',
         isActive: false,
@@ -31,7 +38,7 @@ const sideBarMenu = [
     }
 ];
 
-const bottomMenuItems = [
+const bottomMenuItems: SideBarMenuItems[] = [
     {
         name: 'Chat',
         isActive: false,
@@ -47,7 +54,7 @@ const bottomMenuItems = [
 
 const Sidebar = (): JSX.Element => {
     return (
-        <aside className='border h-full w-[240px] border-r  border-borderCustomGrey flex flex-col justify-between p-0 py-0.5'>
+        <aside className='border h-[full] w-[240px] border-r  border-borderCustomGrey flex flex-col justify-between p-0 py-0.5'>
             <div className='w-full h-full flex flex-col items-center'>
                 <div className='flex items-center justify-center w-full h-16'>
                     <SideBarMenuBtn
