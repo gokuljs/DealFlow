@@ -1,7 +1,7 @@
 'use client';
 
 import clsx from 'clsx';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface ToggleButtonProps {
     initialValue?: boolean;
@@ -15,7 +15,11 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
     themeColor
 }): JSX.Element => {
     const [checked, setChecked] = useState(initialValue ?? false);
-
+    useEffect(() => {
+        if (initialValue !== undefined) {
+            setChecked(initialValue);
+        }
+    }, [initialValue]);
     return (
         <div
             style={{ backgroundColor: checked ? themeColor : '' }}
@@ -28,7 +32,6 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
                 className='h-5 w-5 bg-white rounded-full cursor-pointer'
                 onClick={() => {
                     onChange(!checked);
-                    setChecked(!checked);
                 }}
             />
         </div>
