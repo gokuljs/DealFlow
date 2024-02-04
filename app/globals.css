@@ -6,6 +6,7 @@
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
+    box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +15,11 @@
         --background-start-rgb: 0, 0, 0;
         --background-end-rgb: 0, 0, 0;
     }
+}
+*,
+html,
+body {
+    box-sizing: border-box;
 }
 
 body {
@@ -27,12 +33,12 @@ body {
 
 .hue-horizontal {
     border-radius: 10px !important;
-    div {
-        top: -3px !important;
-        cursor: pointer;
-    }
 }
 
+.hue-horizontal div {
+    top: -3px !important;
+    cursor: pointer;
+}
 @layer utilities {
     .text-balance {
         text-wrap: balance;
