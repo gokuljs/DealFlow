@@ -1841,6 +1841,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@icons/material@npm:^0.2.4":
+  version: 0.2.4
+  resolution: "@icons/material@npm:0.2.4"
+  peerDependencies:
+    react: "*"
+  checksum: 10c0/133518adf91010704b716e7671fc28bcc3c461dc4f4a56ad3a73a955b9993dfaa22494579e9377247fd3318baebe8e4ae7962c01bffeaca0044722c09baa9d73
+  languageName: node
+  linkType: hard
+
 "@isaacs/cliui@npm:^8.0.2":
   version: 8.0.2
   resolution: "@isaacs/cliui@npm:8.0.2"
@@ -4249,6 +4258,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-color@npm:^2":
+  version: 2.17.11
+  resolution: "@types/react-color@npm:2.17.11"
+  dependencies:
+    "@types/react": "npm:*"
+    "@types/reactcss": "npm:*"
+  checksum: 10c0/16df48738665e9e68330ea56748499f8a2558c6d9cceaeebd929f13601b2473260772c5d61871e356f7618349f5cad8513142f656a0fef65efe648cd516fc22f
+  languageName: node
+  linkType: hard
+
 "@types/react-dom@npm:^18":
   version: 18.2.18
   resolution: "@types/react-dom@npm:18.2.18"
@@ -4266,6 +4285,15 @@ __metadata:
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 10c0/1c7b2297deb09f31eb1d0c34107c89013022a9e1cba6d393f9a872bdc456da2f1ff25415c09f97dbf880cef98ade526681bd1d1b8300091b28651d23af7e7aac
+  languageName: node
+  linkType: hard
+
+"@types/reactcss@npm:*":
+  version: 1.2.11
+  resolution: "@types/reactcss@npm:1.2.11"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10c0/cf8ce968fafbcb2f970a8243a5d048c2c64970d1a5b6b3dc182d84f925561c5e701279d61e4b606375a3b30aec3f96d63a087720e987d8deccc191a362bdb19a
   languageName: node
   linkType: hard
 
@@ -6666,6 +6694,7 @@ __metadata:
     "@storybook/test": "npm:^7.6.12"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
+    "@types/react-color": "npm:^2"
     "@types/react-dom": "npm:^18"
     "@typescript-eslint/eslint-plugin": "npm:^6.20.0"
     "@typescript-eslint/parser": "npm:^6.20.0"
@@ -6683,10 +6712,12 @@ __metadata:
     postcss: "npm:^8"
     prettier: "npm:^3.2.4"
     react: "npm:^18"
+    react-color: "npm:^2.19.3"
     react-dom: "npm:^18"
     storybook: "npm:^7.6.12"
     tailwindcss: "npm:^3.3.0"
     typescript: "npm:^5"
+    zustand: "npm:^4.5.0"
   languageName: unknown
   linkType: soft
 
@@ -9697,6 +9728,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash-es@npm:^4.17.15":
+  version: 4.17.21
+  resolution: "lodash-es@npm:4.17.21"
+  checksum: 10c0/fb407355f7e6cd523a9383e76e6b455321f0f153a6c9625e21a8827d10c54c2a2341bd2ae8d034358b60e07325e1330c14c224ff582d04612a46a4f0479ff2f2
+  languageName: node
+  linkType: hard
+
 "lodash.debounce@npm:^4.0.8":
   version: 4.0.8
   resolution: "lodash.debounce@npm:4.0.8"
@@ -9711,7 +9749,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.15, lodash@npm:^4.17.20, lodash@npm:^4.17.21":
+"lodash@npm:^4.0.1, lodash@npm:^4.17.15, lodash@npm:^4.17.20, lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 10c0/d8cbea072bb08655bb4c989da418994b073a608dffa608b09ac04b43a791b12aeae7cd7ad919aa4c925f33b48490b5cfe6c1f71d827956071dae2e7bb3a6b74c
@@ -9860,6 +9898,13 @@ __metadata:
   peerDependencies:
     react: ">= 0.14.0"
   checksum: 10c0/f40d9ab632a659ef7fd3afcae9c40e11ce77d57ae856275eb9439bf6762738eefb9897cfb65fc0495347cf8fc3b1cfef6cb9dcfe96959ded3ebd122375155323
+  languageName: node
+  linkType: hard
+
+"material-colors@npm:^1.2.1":
+  version: 1.2.6
+  resolution: "material-colors@npm:1.2.6"
+  checksum: 10c0/6502ab25b23b783cca4112946bc28a64fdba8bf8efcfbb1e76028d21ecc4b88a2b1338dacf1b64e4b6af46ab98984080586002cdaa9428dc91f6fdcc6909b12a
   languageName: node
   linkType: hard
 
@@ -11394,7 +11439,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.10, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -11606,6 +11651,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-color@npm:^2.19.3":
+  version: 2.19.3
+  resolution: "react-color@npm:2.19.3"
+  dependencies:
+    "@icons/material": "npm:^0.2.4"
+    lodash: "npm:^4.17.15"
+    lodash-es: "npm:^4.17.15"
+    material-colors: "npm:^1.2.1"
+    prop-types: "npm:^15.5.10"
+    reactcss: "npm:^1.2.0"
+    tinycolor2: "npm:^1.4.1"
+  peerDependencies:
+    react: "*"
+  checksum: 10c0/6f9fce9ff3014926d960abccd5d79ecb391a41f835a4b85663fd48ff933554391222f40ed8cfc5417305d47b1e480023981ec22e13c3b16b0d8d718270fa815e
+  languageName: node
+  linkType: hard
+
 "react-colorful@npm:^5.1.2":
   version: 5.6.1
   resolution: "react-colorful@npm:5.6.1"
@@ -11773,6 +11835,15 @@ __metadata:
   dependencies:
     loose-envify: "npm:^1.1.0"
   checksum: 10c0/b562d9b569b0cb315e44b48099f7712283d93df36b19a39a67c254c6686479d3980b7f013dc931f4a5a3ae7645eae6386b4aa5eea933baa54ecd0f9acb0902b8
+  languageName: node
+  linkType: hard
+
+"reactcss@npm:^1.2.0":
+  version: 1.2.3
+  resolution: "reactcss@npm:1.2.3"
+  dependencies:
+    lodash: "npm:^4.0.1"
+  checksum: 10c0/a3aceb0fbfd58312f0c7fadbe92920e6536ec24d17ebee44fd4a14dd831d413fff5c2df0e85579b440667935e57a06876325cbd1368d3131824a8c2ec43b7978
   languageName: node
   linkType: hard
 
@@ -13224,6 +13295,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tinycolor2@npm:^1.4.1":
+  version: 1.6.0
+  resolution: "tinycolor2@npm:1.6.0"
+  checksum: 10c0/9aa79a36ba2c2a87cb221453465cabacd04b9e35f9694373e846fdc78b1c768110f81e581ea41440106c0f24d9a023891d0887e8075885e790ac40eb0e74a5c1
+  languageName: node
+  linkType: hard
+
 "tinyspy@npm:^2.1.1":
   version: 2.2.0
   resolution: "tinyspy@npm:2.2.0"
@@ -13755,6 +13833,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"use-sync-external-store@npm:1.2.0":
+  version: 1.2.0
+  resolution: "use-sync-external-store@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/ac4814e5592524f242921157e791b022efe36e451fe0d4fd4d204322d5433a4fc300d63b0ade5185f8e0735ded044c70bcf6d2352db0f74d097a238cebd2da02
+  languageName: node
+  linkType: hard
+
 "util-deprecate@npm:^1.0.1, util-deprecate@npm:^1.0.2, util-deprecate@npm:~1.0.1":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
@@ -14171,5 +14258,25 @@ __metadata:
   version: 1.0.0
   resolution: "yocto-queue@npm:1.0.0"
   checksum: 10c0/856117aa15cf5103d2a2fb173f0ab4acb12b4b4d0ed3ab249fdbbf612e55d1cadfd27a6110940e24746fb0a78cf640b522cc8bca76f30a3b00b66e90cf82abe0
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "zustand@npm:4.5.0"
+  dependencies:
+    use-sync-external-store: "npm:1.2.0"
+  peerDependencies:
+    "@types/react": ">=16.8"
+    immer: ">=9.0.6"
+    react: ">=16.8"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    immer:
+      optional: true
+    react:
+      optional: true
+  checksum: 10c0/4802c4e26f2c1ec0d8e0ce8e596413cafb8b3d383e664de4eb30af63cedd23686f17b96a8a4d4583fc4470b187de0bbeafcfb94894efc50f6e62813e02a70b64
   languageName: node
   linkType: hard
