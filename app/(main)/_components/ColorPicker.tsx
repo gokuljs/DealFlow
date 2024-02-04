@@ -5,6 +5,7 @@ import { HuePicker } from 'react-color';
 
 const ColorPicker = (): JSX.Element => {
     const { value, update } = useDesignStudio();
+
     return (
         <div className='w-full h-12 flex items-center gap-2'>
             <div className='max-w-[30%] py-3 px-4 flex items-center gap-2 bg-[#6470840A] rounded-[20px] min-w-40'>
@@ -21,8 +22,10 @@ const ColorPicker = (): JSX.Element => {
                     HEX
                 </div>
             </div>
-            <div className='w-full h-12 px-4 flex items-center justify-center bg-[#6470840A] rounded-[20px]'>
+            <div className='w-full h-12 px-8 flex items-center justify-center bg-[#6470840A] rounded-[20px] min-w-[312px]'>
                 <HuePicker
+                    width='100%'
+                    height='8px'
                     className='rounded-full'
                     color={value.themeColor as string}
                     onChange={(color) => {

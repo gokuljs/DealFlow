@@ -27,7 +27,10 @@ body {
 
 .hue-horizontal {
     border-radius: 10px !important;
-    height: 8px !important;
+    div {
+        top: -3px !important;
+        cursor: pointer;
+    }
 }
 
 @layer utilities {
