@@ -10,7 +10,7 @@ const ColorPicker = (): JSX.Element => {
         <div className='w-full h-12 flex items-center gap-2'>
             <div className='max-w-[30%] py-3 px-4 flex items-center gap-2 bg-[#6470840A] rounded-[20px] min-w-40'>
                 <div
-                    className='rounded-full h-6 w-6 block'
+                    className='h-6 w-6 rounded-[100%]'
                     style={{
                         backgroundColor: value?.themeColor as string
                     }}
