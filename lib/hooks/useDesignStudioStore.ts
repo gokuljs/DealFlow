@@ -1,8 +1,8 @@
 import { create } from 'zustand';
 
 type designStudioValueProps = {
-    profileImageUrl?: String;
-    themeColor: String;
+    profileImageUrl?: string;
+    themeColor: string;
     displayPersonalName: boolean;
     displayCompanyName: boolean;
 };

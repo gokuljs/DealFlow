@@ -20,7 +20,7 @@ const AddProfile = (): JSX.Element => {
             reader.onloadend = () => {
                 const updateValue = {
                     ...value,
-                    profileImageUrl: reader.result as String
+                    profileImageUrl: reader.result as string
                 };
                 update(updateValue);
             };
