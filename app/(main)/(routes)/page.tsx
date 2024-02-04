@@ -33,6 +33,18 @@ const page = (): JSX.Element => {
                                         });
                                     }}
                                 />
+                                <ToggleBox
+                                    name='Display company name'
+                                    value={data.displayCompanyName}
+                                    themeColor={data.themeColor}
+                                    roundedType='BOTTOM'
+                                    onChange={(value) => {
+                                        update({
+                                            ...data,
+                                            displayCompanyName: value
+                                        });
+                                    }}
+                                />
                             </div>
                         </div>
 

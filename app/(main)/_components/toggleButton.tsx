@@ -15,14 +15,13 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
     themeColor
 }): JSX.Element => {
     const [checked, setChecked] = useState(initialValue ?? false);
-    console.log(themeColor);
+    console.log(themeColor, 'sssss');
     return (
         <div
+            style={{ backgroundColor: checked ? themeColor : '' }}
             className={clsx(
                 'h-6 w-10 rounded-[100px] px-1 py-0 flex items-center transition-all duration-150 ease-in-out',
-                checked
-                    ? `justify-end bg-[${themeColor}]`
-                    : 'justify-start bg-[#64708414]'
+                checked ? `justify-end` : 'justify-start bg-[#64708414]'
             )}
         >
             <div

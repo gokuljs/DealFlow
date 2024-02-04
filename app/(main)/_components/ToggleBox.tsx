@@ -1,5 +1,6 @@
 import React from 'react';
 import ToggleButton from './toggleButton';
+import clsx from 'clsx';
 
 interface ToggleBoxProps {
     name: string;
@@ -13,12 +14,17 @@ const ToggleBox: React.FC<ToggleBoxProps> = ({
     name,
     value,
     onChange,
-    themeColor
+    themeColor,
+    roundedType
 }): JSX.Element => {
-    console.log(themeColor, 'sssss');
     return (
-        <div className='w-full h-14 flex items-center justify-between'>
-            <p>{name}</p>
+        <div
+            className={clsx(
+                'w-full h-14 flex items-center justify-between py-3 px-4 bg-[#6470840A]',
+                roundedType === 'TOP' ? 'rounded-t-[20px]' : 'rounded-b-[20px]'
+            )}
+        >
+            <p className='font-medium text-[13px] text-[#120713]'>{name}</p>
             <ToggleButton
                 initialValue={value}
                 onChange={onChange}
