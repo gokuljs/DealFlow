@@ -1,5 +1,6 @@
 import React from 'react';
 import AddProfile from '../_components/AddProfile';
+import ColorPicker from '../_components/ColorPicker';
 
 const page = (): JSX.Element => {
     return (
@@ -12,11 +13,11 @@ const page = (): JSX.Element => {
                         </h1>
                     </div>
                     <div className='h-full w-full flex flex-col'>
-                        <div className='w-full h-[281px] px-8 gap-4'>
+                        <div className='w-full h-[281px] px-8 flex flex-col gap-4'>
                             <AddProfile />
-                            <div></div>
-                            <div></div>
+                            <ColorPicker />
                         </div>
+
                         <div></div>
                     </div>
                 </div>

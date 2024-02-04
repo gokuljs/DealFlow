@@ -32,6 +32,9 @@ const AddProfile = (): JSX.Element => {
             {/* use of normal image is temporary */}
             {value.profileImageUrl && (
                 <div
+                    style={{
+                        borderColor: value.themeColor as string
+                    }}
                     className={`h-14 w-14 flex items-center justify-center border border-[${value.themeColor}] rounded-full`}
                 >
                     <img

@@ -25,6 +25,10 @@ body {
         );
 }
 
+.hue-horizontal {
+    border-radius: 10px !important;
+}
+
 @layer utilities {
     .text-balance {
         text-wrap: balance;
