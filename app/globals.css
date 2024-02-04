@@ -27,6 +27,7 @@ body {
 
 .hue-horizontal {
     border-radius: 10px !important;
+    height: 8px !important;
 }
 
 @layer utilities {
