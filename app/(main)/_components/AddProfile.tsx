@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
-import { useDesignStudio } from '@/lib/hooks/useDesignStudioStore';
+import { useDesignStudio } from '../../../lib/hooks/useDesignStudioStore';
 import Image from 'next/image';
 import { useRef } from 'react';
 
@@ -27,7 +27,6 @@ const AddProfile = (): JSX.Element => {
             reader.readAsDataURL(file);
         }
     };
-    console.log(value);
     return (
         <div className='w-full h-[88px]  bg-[#6470840A] gap-8 rounded-[20px] p-4 flex'>
             {/* use of normal image is temporary */}
