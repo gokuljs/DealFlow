@@ -5,7 +5,7 @@ import ColorPicker from '../_components/ColorPicker';
 import ToggleBox from '../_components/ToggleBox';
 import { useDesignStudio } from '@/lib/hooks/useDesignStudioStore';
 
-const page = (): JSX.Element => {
+const Page = (): JSX.Element => {
     const { value: data, update } = useDesignStudio();
     return (
         <div className='h-full w-full flex justify-between mt-4'>
@@ -59,4 +59,4 @@ const page = (): JSX.Element => {
     );
 };
 
-export default page;
+export default Page;

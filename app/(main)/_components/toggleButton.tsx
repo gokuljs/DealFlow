@@ -15,7 +15,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
     themeColor
 }): JSX.Element => {
     const [checked, setChecked] = useState(initialValue ?? false);
-    console.log(themeColor, 'sssss');
+
     return (
         <div
             style={{ backgroundColor: checked ? themeColor : '' }}
