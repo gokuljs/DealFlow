@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
-import { useDesignStudio } from '@/lib/hooks/useDesignStudioStore';
+import { useDesignStudio } from '../../../lib/hooks/useDesignStudioStore';
 import Image from 'next/image';
 import React from 'react';
 
