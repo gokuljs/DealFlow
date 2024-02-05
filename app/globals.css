@@ -44,3 +44,23 @@ body {
         text-wrap: balance;
     }
 }
+.slider-container {
+    position: relative;
+}
+.slider-container-carousel {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.slider-carousel {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
