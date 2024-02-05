@@ -8,8 +8,8 @@ const Invoice = (): JSX.Element => {
     const { value } = useDesignStudio();
     return (
         <div className='h-full w-full bg-white rounded-[20px] flex item-center justify-center p-4'>
-            <div className='h-full w-full rounded-[20px] flex flex-col justify-between overflow-hidden'>
-                <div className='w-full flex flex-col gap-1 relative'>
+            <div className='h-full w-full rounded-[20px] flex flex-col justify-between overflow-hidden relative'>
+                <div className='w-full flex flex-col gap-1 relative z-20'>
                     <div className='h-[180px] w-[180px] rounded-full bg-[#C655CE] absolute top-[-80px] left-[-40px]'></div>
                     <Image
                         src={
@@ -166,6 +166,63 @@ const Invoice = (): JSX.Element => {
                             <div className='w-[20%] text-xs justify-end flex items-center border-b-2'>
                                 Dkk 420k
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='h-[250px] w-[250px] bg-[#f1d0f491] rounded-full absolute z-0 right-[-190px] bottom-[10%]'></div>
+                <div className='h-[180px] w-[180px] rounded-full bg-custom-gradient absolute bottom-[-90px] left-[-60px]'></div>
+
+                <div className='w-full flex flex-col justify-end px-8 gap-2'>
+                    <div className='flex flex-col gap-1'>
+                        <div className='text-[#431746] text-2xl'>
+                            Pay instruction (Pay online)
+                        </div>
+                        <div className='flex flex-col'>
+                            <div className='text-xs flex justify-between'>
+                                <p className='text-xs'>Bank:</p>
+                                <p className='text-xs'>Revolut Bank UAB</p>
+                            </div>
+                            <div className='text-xs flex justify-between'>
+                                <p className='text-xs'>Bank Address:</p>
+                                <p className='text-xs'>
+                                    Revolut Bank UAB sas sa sa sasas
+                                </p>
+                            </div>
+                            <div className='text-xs flex justify-between'>
+                                <p className='text-xs'>Account name:</p>
+                                <p className='text-xs'>
+                                    Account name:Dealflow aps
+                                </p>
+                            </div>
+                            <div className='text-xs flex justify-between'>
+                                <p className='text-xs'>IBAN:</p>
+                                <p className='text-xs'>lwqwqwl222121212</p>
+                            </div>
+                            <div className='text-xs flex justify-between'>
+                                <p className='text-xs'>BIC:</p>
+                                <p className='text-xs'>Revolut</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex justify-between items-center relative  w-full z-20 py-2 border-t-2'>
+                        <div className='z-10 flex flex-col gap-1 w-[65%]'>
+                            <p className='text-xs text-[#431746]'>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laudantium debitis cumque,
+                                suscipit cupiditate magnam impedit accusantium
+                                qui obcaecati itaque porro voluptates officiis
+                            </p>
+                            <div className='text-xs text-[#431746]'>
+                                Page 1 of 1
+                            </div>
+                        </div>
+                        <div className=' flex flex-col justify-end gap-1 z-20'>
+                            <p className='text-xs text-[#C655CE] font-bold flex justify-end'>
+                                invoicing Powered by
+                            </p>
+                            <h1 className='text-xl font-bold bg-clip-text text-transparent bg-text-gradient flex justify-end'>
+                                Dealflow
+                            </h1>
                         </div>
                     </div>
                 </div>
