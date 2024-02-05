@@ -83,6 +83,91 @@ const Invoice = (): JSX.Element => {
                             </p>
                         </div>
                     </div>
+                    <div className='flex flex-col'>
+                        <h1 className='text-[#431746] text-xl font-bold w-full flex items-center px-8'>
+                            DKK 3,200 due on 14, October 2023
+                        </h1>
+                        <p className='text-xs px-8'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Error at eligendi explicabo esse reprehenderit
+                            explicabo esse reprehenderit.
+                        </p>
+                    </div>
+                    <div className='flex flex-col gap-1 px-8 pt-2'>
+                        <div className='flex gap-1 item-center justify-between border-b-2 h-[34px]'>
+                            <div className='w-[50%] text-[#431746] flex items-center justify-start'>
+                                Description
+                            </div>
+                            <div className='w-[10%] text-[#431746] flex items-center justify-center'>
+                                Qty
+                            </div>
+                            <div className='w-[20%] text-[#431746] flex items-center justify-start'>
+                                Rate
+                            </div>
+                            <div className='w-[10%] text-[#431746] flex items-center justify-center'>
+                                Tax
+                            </div>
+                            <div className='w-[20%] text-[#431746] flex justify-end items-center'>
+                                Total
+                            </div>
+                        </div>
+                        <div className='flex  item-center justify-between h-[34px]'>
+                            <div className='w-[50%] text-xs flex items-center'>
+                                Co-founding 24/7,jokes included
+                            </div>
+                            <div className='w-[10%] text-xs flex items-center justify-center'>
+                                42
+                            </div>
+                            <div className='w-[20%] text-xs flex items-center justify-start border-b-2'>
+                                Dkk 420k
+                            </div>
+                            <div className='w-[10%] text-xs flex items-center justify-center border-b-2'>
+                                25%
+                            </div>
+                            <div className='w-[20%] text-xs justify-end flex items-center border-b-2'>
+                                Dkk 420k
+                            </div>
+                        </div>
+                        <div className='flex  item-center justify-between h-[34px]'>
+                            <div className='w-[50%] text-xs flex items-center'></div>
+                            <div className='w-[10%] text-xs flex items-center justify-center'></div>
+                            <div className='w-[20%] text-xs flex items-center justify-start border-b-2'>
+                                Dkk 420k
+                            </div>
+                            <div className='w-[10%] text-xs flex items-center justify-center border-b-2'>
+                                25%
+                            </div>
+                            <div className='w-[20%] text-xs justify-end flex items-center border-b-2'>
+                                Dkk 420k
+                            </div>
+                        </div>{' '}
+                        <div className='flex  item-center justify-between h-[34px]'>
+                            <div className='w-[50%] text-xs flex items-center'></div>
+                            <div className='w-[10%] text-xs flex items-center justify-center'></div>
+                            <div className='w-[20%] text-xs flex items-center justify-start border-b-2'>
+                                Dkk 420k
+                            </div>
+                            <div className='w-[10%] text-xs flex items-center justify-center border-b-2'>
+                                25%
+                            </div>
+                            <div className='w-[20%] text-xs justify-end flex items-center border-b-2'>
+                                Dkk 420k
+                            </div>
+                        </div>{' '}
+                        <div className='flex  item-center justify-between h-[34px]'>
+                            <div className='w-[50%] text-xs flex items-center'></div>
+                            <div className='w-[10%] text-xs flex items-center justify-center'></div>
+                            <div className='w-[20%] text-xs flex items-center justify-start border-b-2'>
+                                Dkk 420k
+                            </div>
+                            <div className='w-[10%] text-xs flex items-center justify-center border-b-2'>
+                                25%
+                            </div>
+                            <div className='w-[20%] text-xs justify-end flex items-center border-b-2'>
+                                Dkk 420k
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
