@@ -12,13 +12,18 @@ const Carousel = (): JSX.Element => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
         adaptiveHeight: true,
         variableWidth: true,
         lazyload: true,
-        autoPLay: true,
+        autoplay: false,
+        arrows: false,
+        slickPlay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        focusOnSelect: true,
+        cssEase: 'linear',
         beforeChange: (currentSlide: number, nextSlide: number) => {
             const totalSlides = 3; // Total number of slides
             const centerSlideIndex = (nextSlide + 1) % totalSlides;
