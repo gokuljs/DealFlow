@@ -10,7 +10,7 @@ const Carousel = (): JSX.Element => {
     const [centerSlide, setCenterSlide] = useState<number>(1);
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -29,7 +29,7 @@ const Carousel = (): JSX.Element => {
     console.log(centerSlide, 'ssss');
 
     return (
-        <div className='h-full  w-[700px] my-0 mx-auto'>
+        <div className='h-full w-[700px] mt-20 my-0 mx-auto'>
             <Slider {...settings}>
                 <div
                     className={clsx(
