@@ -30,9 +30,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
         >
             <div
                 className='h-5 w-5 bg-white rounded-full cursor-pointer'
-                onClick={() => {
-                    onChange(!checked);
-                }}
+                onClick={() => onChange(!checked)}
             />
         </div>
     );

@@ -44,3 +44,31 @@ body {
         text-wrap: balance;
     }
 }
+
+.carousel-card {
+    /* border: 1px solid black; */
+    width: 212px !important;
+    height: 283px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+    margin: 0 8px;
+    max-height: 283px !important;
+    outline: none !important;
+}
+
+.non-active-card {
+    width: 144px !important;
+    height: 200px !important;
+}
+
+.center {
+    border: 1px solid #c655ce !important;
+    width: 242px !important;
+    height: 400px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.15s ease-in-out;
+    border-radius: 12px;
+}

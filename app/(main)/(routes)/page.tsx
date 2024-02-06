@@ -4,6 +4,8 @@ import AddProfile from '../_components/AddProfile';
 import ColorPicker from '../_components/ColorPicker';
 import ToggleBox from '../_components/ToggleBox';
 import { useDesignStudio } from '@/lib/hooks/useDesignStudioStore';
+import Invoice from '../_components/Invoice';
+import Carousel from '../_components/Carousel';
 
 const Page = (): JSX.Element => {
     const { value: data, update } = useDesignStudio();
@@ -47,13 +49,14 @@ const Page = (): JSX.Element => {
                                 />
                             </div>
                         </div>
-
-                        <div></div>
+                        <div className='w-full h-full'>
+                            <Carousel />
+                        </div>
                     </div>
                 </div>
             </div>
             <div className='flex-1 flex items-center justify-center pl-4'>
-                <div className='h-full w-full bg-white rounded-[20px]'></div>
+                <Invoice />
             </div>
         </div>
     );
