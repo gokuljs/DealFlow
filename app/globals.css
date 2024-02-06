@@ -44,23 +44,29 @@ body {
         text-wrap: balance;
     }
 }
-.slider-container {
-    position: relative;
-}
-.slider-container-carousel {
+
+.carousel-card {
+    /* border: 1px solid black; */
+    width: 212px !important;
+    height: 283px !important;
     display: flex !important;
-    justify-content: center !important;
     align-items: center !important;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    justify-content: center;
+    margin: 0 8px;
+    max-height: 283px !important;
 }
 
-.slider-carousel {
+.non-active-card {
+    width: 144px !important;
+    height: 200px !important;
+}
+
+.center {
+    border: 1px solid red !important;
+    width: 242px !important;
+    height: 400px !important;
     display: flex !important;
-    justify-content: center !important;
     align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.15s ease-in-out;
 }

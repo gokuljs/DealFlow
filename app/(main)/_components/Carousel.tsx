@@ -1,60 +1,79 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import Image from 'next/image';
+import clsx from 'clsx';
 
 const Carousel = (): JSX.Element => {
+    const [centerSlide, setCenterSlide] = useState<number>(1);
+
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 4,
-        centerMode: true,
-        centerPadding: '25px',
-        arrows: false,
-        slickPlay: true,
-        autoplaySpeed: 3000,
-        focusOnSelect: true,
-        autoplay: true
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        variableWidth: true,
+        lazyload: true,
+        autoPLay: true,
+        beforeChange: (currentSlide: number, nextSlide: number) => {
+            const totalSlides = 3; // Total number of slides
+            const centerSlideIndex = (nextSlide + 1) % totalSlides;
+            setCenterSlide(centerSlideIndex);
+        }
     };
+
+    console.log(centerSlide, 'ssss');
+
     return (
-        <div className='h-full w-[700px] my-0 mx-auto'>
-            <div className='slider-container h-full relative py-8 pt-20'>
-                <Slider
-                    {...settings}
-                    className='slider-container-carousel absolute inset-0 m-auto'
+        <div className='h-full  w-[700px] my-0 mx-auto'>
+            <Slider {...settings}>
+                <div
+                    className={clsx(
+                        'carousel-card',
+                        centerSlide === 0 && 'center'
+                    )}
                 >
-                    <div className='slider-carousel'>
-                        <Image
-                            src='/invoice.svg'
-                            width={180}
-                            height={251}
-                            className='rounded-2'
-                            alt='invoice image'
-                        />
-                    </div>
-                    <div className='slider-carousel'>
-                        <Image
-                            src='/invoice.svg'
-                            width={180}
-                            height={251}
-                            className='rounded-2'
-                            alt='invoice image'
-                        />
-                    </div>
-                    <div className='slider-carousel'>
-                        <Image
-                            src='/invoice.svg'
-                            width={180}
-                            height={251}
-                            className='rounded-2'
-                            alt='invoice image'
-                        />
-                    </div>
-                </Slider>
-            </div>
+                    <Image
+                        src='/invoice.svg'
+                        width={160}
+                        height={251}
+                        className='rounded-4 non-active-card'
+                        alt='image'
+                    />
+                </div>
+                <div
+                    className={clsx(
+                        'carousel-card',
+                        centerSlide === 1 && 'center'
+                    )}
+                >
+                    <Image
+                        src='/invoice.svg'
+                        width={160}
+                        height={251}
+                        className='rounded-4'
+                        alt='image'
+                    />
+                </div>
+                <div
+                    className={clsx(
+                        'carousel-card',
+                        centerSlide === 2 && 'center'
+                    )}
+                >
+                    <Image
+                        src='/invoice.svg'
+                        width={160}
+                        height={251}
+                        className='rounded-4 non-active-card'
+                        alt='image'
+                    />
+                </div>
+            </Slider>
         </div>
     );
 };
